@@ -1,5 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 .App {
   text-align: center;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  height: 100vh;
+  font-family: "Roboto Mono", monospace;
+}
+.deneme {
+  padding-top: 10%;
+}
+@media screen and (max-width: 992px) {
+  .deneme {
+    padding-top: 25%;
+  }
 }
 
 .App-logo {
@@ -28,11 +40,47 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+#loading {
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

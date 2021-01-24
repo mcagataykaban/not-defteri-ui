@@ -1,0 +1,20 @@
+.add-form {
+  padding-top: 48px;
+  justify-content: center;
+  align-items: center;
+}
+.component-form-shadow {
+  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  width: 70%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  background: #ffffcc;
+}
+@media screen and (max-width: 600px) {
+  .component-form-shadow {
+    width: 90%;
+  }
+}
